@@ -97,9 +97,6 @@ def ResNeXtVLAD(pretrained=True, vlad_clusters=64):
     vlad = NetVLADLayer(vlad_clusters, dim=2048)
     model.add_module('pool', vlad)
     return model
-    
-
-
 
     
     
